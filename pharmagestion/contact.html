@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Pharmacie Ndèye Coumba</title>
+</head>
+<body>
+    <!-- entete  -->
+    <div>
+        <img src="images/logo.png" alt="" width="60" height="60">
+        <p>
+             <strong>Pharmacie Ndèye Coumba</strong>
+        </p>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Nos services</a></li>
+            <li><a href="horaires.html">Horaires et garde</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <hr />
+
+    <h1>Nous contacter</h1>
+    <p>
+        Une question sur un produit ou une commande ? écrivez-nous, nous vous répondons dans la journée.
+    </p>
+    <h2>Nos coordonnées</h2>
+    <ol>
+        <li>L'adresse: Pharmacie Ndèye Coumba Route principale, à côté du rond-point, Guédiawaye</li>
+        <li>Le téléphone: 77 000 00 00</li>
+        <li>L'e-mail de la pharmacie: pharmacie.ndeyecoumba@example.sn</li>
+    </ol>
+    <h2>Demander un produit</h2>
+    <form action="">
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+            <label for="nom">Nom</label><br>
+            <input type="text" required minlength="3" id="nom" maxlength="50"><br>
+            <label for="">Téléphone</label><br>
+            <input type="tel" required minlength="9" maxlength="12" placeholder="77 000 00 00"><br>
+            <label for="">Email</label><br>
+            <input type="email">
+        </fieldset>
+        <fieldset>
+            <legend>Votre message</legend>
+            <label for="">Objet</label><br>
+            <select name="motif" id="motif" required>
+                <option value="">Choisissez un objet</option>
+                <option value="produit">Question sur un produit</option>
+                <option value="">Commande d'un produit absent</option>
+                <option value="">Question sur les gardes</option>
+            </select><br>
+
+            <input type="radio" id="rep-appel" name="reponse" value="appel" checked>
+        </fieldset>
+    </form>
+      <hr>
+      <!-- pied de page  -->
+       <div>
+            <p>Pharmacie Ndèye Coumba Route principale, à côté du rond-point, Guédiawaye</p>
+            <p>Téléphone: 77 000 00 00 E-mail: pharmacie.ndeyecoumba@example.sn</p>
+            <p>Ouvert du lundi au samedi, de 8h à 22h</p>
+            <p><a href="https://www.google.com/maps/search/Guédiawaye" target="_blank">Nous trouver sur la carte</a></p>
+            <p><small>Projet pédagogie structure fictive</small></p>
+       </div>
+</body>
+</html>
