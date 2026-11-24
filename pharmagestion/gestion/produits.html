@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits · PharmaGestion</title>
+</head>
+<body>
+    <!-- Menu de l'espace de gestion -->
+    <div>
+        <p><strong>PharmaGestion</strong> · Dr Ndèye Coumba Faye, pharmacienne</p>
+        <ul>
+            <li><a href="produits.html">Produits</a></li>
+            <li><a href="produit-form.html">Ajouter un produit</a></li>
+            <li><a href="vente.html">Vente au comptoir</a></li>
+            <li><a href="../index.html">Déconnexion</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <h1>Liste des produits</h1>
+    <p><a href="produit-form.html">+ Ajouter un produit</a></p>
+
+    <form action="">
+        <label for="recherche">Rechercher</label>
+        <input type="text" id="recherche" name="q" placeholder="Nom ou référence">
+        <label for="filtre">Catégorie</label>
+        <select id="filtre" name="categorie">
+            <option value="">Toutes</option>
+            <option>Douleur et fièvre</option>
+            <option>Rhume et allergies</option>
+            <option>Digestion</option>
+            <option>Vitamines et compléments</option>
+            <option>Soins du visage et du corps</option>
+            <option>Hygiène</option>
+            <option>Bébé et maman</option>
+            <option>Premiers secours et prévention</option>
+        </select>
+        <input type="submit" value="Filtrer">
+    </form>
+    <br>
+
+    <table border="1">
+        <tr>
+            <th>Réf.</th>
+            <th>Produit</th>
+            <th>Catégorie</th>
+            <th>Prix (FCFA)</th>
+            <th>Stock</th>
+            <th>Péremption</th>
+            <th>État</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>P001</td>
+            <td>Paracétamol 500 mg, boîte de 16 comprimés</td>
+            <td>Douleur et fièvre</td>
+            <td>700</td>
+            <td>57</td>
+            <td>21/01/2029</td>
+            <td>Normal</td>
+            <td><a href="produit-form.html">Modifier</a> · <a href="#">Supprimer</a></td>
+        </tr>
+        <tr>
+            <td>P006</td>
+            <td>Ibuprofène 400 mg, boîte de 20 comprimés</td>
+            <td>Douleur et fièvre</td>
+            <td>1 400</td>
+            <td>4</td>
+            <td>02/10/2029</td>
+            <td>Stock faible</td>
+            <td><a href="produit-form.html">Modifier</a> · <a href="#">Supprimer</a></td>
+        </tr>
+        <tr>
+            <td>P012</td>
+            <td>Spray nasal à l'eau de mer, 100 ml</td>
+            <td>Rhume et allergies</td>
+            <td>3 600</td>
+            <td>59</td>
+            <td>12/04/2028</td>
+            <td>Normal</td>
+            <td><a href="produit-form.html">Modifier</a> · <a href="#">Supprimer</a></td>
+        </tr>
+        <tr>
+            <td>P019</td>
+            <td>Smectite, boîte de 30 sachets</td>
+            <td>Digestion</td>
+            <td>3 300</td>
+            <td>7</td>
+            <td>19/08/2028</td>
+            <td>Stock faible</td>
+            <td><a href="produit-form.html">Modifier</a> · <a href="#">Supprimer</a></td>
+        </tr>
+        <tr>
+            <td>P024</td>
+            <td>Vitamine C 500 mg à croquer, tube de 20</td>
+            <td>Vitamines et compléments</td>
+            <td>1 900</td>
+            <td>0</td>
+            <td>09/01/2029</td>
+            <td>Rupture</td>
+            <td><a href="produit-form.html">Modifier</a> · <a href="#">Supprimer</a></td>
+        </tr>
+        <tr>
+            <td>P032</td>
+            <td>Beurre de karité pur, 250 g</td>
+            <td>Soins du visage et du corps</td>
+            <td>2 500</td>
+            <td>17</td>
+            <td>23/10/2028</td>
+            <td>Normal</td>
+            <td><a href="produit-form.html">Modifier</a> · <a href="#">Supprimer</a></td>
+        </tr>
+        <tr>
+            <td>P044</td>
+            <td>Bain de bouche, 250 ml</td>
+            <td>Hygiène</td>
+            <td>2 700</td>
+            <td>0</td>
+            <td>26/06/2029</td>
+            <td>Rupture</td>
+            <td><a href="produit-form.html">Modifier</a> · <a href="#">Supprimer</a></td>
+        </tr>
+        <tr>
+            <td>P058</td>
+            <td>Thermomètre digital</td>
+            <td>Premiers secours et prévention</td>
+            <td>3 900</td>
+            <td>0</td>
+            <td>27/01/2029</td>
+            <td>Rupture</td>
+            <td><a href="produit-form.html">Modifier</a> · <a href="#">Supprimer</a></td>
+        </tr>
+        <tr>
+            <td colspan="8">8 produits affichés sur 60 · 2 en stock faible · 3 en rupture</td>
+        </tr>
+    </table>
+
+    <hr>
+    <p><small>PharmaGestion · espace réservé à l'équipe · projet pédagogique, données fictives</small></p>
+</body>
+</html>

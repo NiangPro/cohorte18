@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, a{
+            font-size: 43px;
+            color: blue;
+        }
+
+        div > p{
+            font-size: 24px;
+            color: brown;
+        }
+
+        div + p{
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        input[type="email"], input[type="password"]{
+            width: 400px;
+            height: 30px;
+            outline: none;
+        }
+
+        input[type="submit"]{
+            background: green;
+            color: white;
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+            transition: 3s;
+        }
+
+        input[type="submit"]:hover{
+            background: red;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, rem.</p>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro minus cumque.</p>
+    <a href="">Lorem, ipsum dolor.</a>
+    <form action="">
+        <input type="email" placeholder="Entrer votre email"><br>
+        <input type="password" placeholder="Entrer votre mot de passe"><br>
+        <input type="submit" value="Se connecter">
+    </form>
+</body>
+</html>

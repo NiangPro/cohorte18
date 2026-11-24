@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact · Pharmacie Ndèye Coumba</title>
+</head>
+<body>
+    <!-- En-tête : le logo, le nom de la pharmacie et le menu -->
+    <div>
+        <img src="images/logo.png" alt="" width="60" height="60">
+        <p><strong>Pharmacie Ndèye Coumba</strong></p>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Nos services</a></li>
+            <li><a href="horaires.html">Horaires et garde</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <h1>Nous contacter</h1>
+    <p>Une question sur un produit ou une commande ? Écrivez-nous, nous vous répondons dans la journée.</p>
+
+    <h2>Nos coordonnées</h2>
+    <ul>
+        <li>Adresse : Route principale, à côté du rond-point, Guédiawaye</li>
+        <li>Téléphone : 77 000 00 00</li>
+        <li>E-mail : pharmacie.ndeyecoumba@exemple.sn</li>
+    </ul>
+
+    <h2>Écrivez-nous</h2>
+    <form action="">
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+            <label for="nom">Votre nom</label><br>
+            <input type="text" id="nom" name="nom" placeholder="Ex. : Awa Ndiaye" minlength="3" maxlength="50" required><br>
+            <label for="telephone">Votre téléphone</label><br>
+            <input type="tel" id="telephone" name="telephone" placeholder="77 000 00 00" minlength="9" maxlength="12" required><br>
+            <label for="email">Votre e-mail (facultatif)</label><br>
+            <input type="email" id="email" name="email" placeholder="awa.ndiaye@exemple.sn">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Votre message</legend>
+            <label for="motif">Objet</label><br>
+            <select id="motif" name="motif" required>
+                <option value="">Choisissez un objet</option>
+                <option value="produit">Question sur un produit</option>
+                <option value="commande">Commande d'un produit absent</option>
+                <option value="garde">Question sur les gardes</option>
+                <option value="autre">Autre</option>
+            </select><br>
+            <label for="message">Votre message</label><br>
+            <textarea id="message" name="message" rows="5" cols="50" maxlength="500" required></textarea><br>
+            <p>Comment préférez-vous être recontacté ?</p>
+            <input type="radio" id="rep-appel" name="reponse" value="appel" checked>
+            <label for="rep-appel">Appel</label>
+            <input type="radio" id="rep-whatsapp" name="reponse" value="whatsapp">
+            <label for="rep-whatsapp">WhatsApp</label>
+            <input type="radio" id="rep-email" name="reponse" value="email">
+            <label for="rep-email">E-mail</label>
+        </fieldset>
+        <br>
+        <input type="checkbox" id="accord" name="accord" required>
+        <label for="accord">J'accepte que la pharmacie utilise mes coordonnées pour me répondre.</label><br><br>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Effacer">
+    </form>
+
+    <h2>Nous trouver</h2>
+    <iframe src="https://maps.google.com/maps?q=Gu%C3%A9diawaye&amp;z=14&amp;output=embed" width="600" height="400" title="Plan d'accès à la pharmacie, à côté du rond-point de Guédiawaye" loading="lazy"></iframe>
+    <p><a href="index.html">Retour à l'accueil</a></p>
+
+    <hr>
+
+    <!-- Pied de page -->
+    <div>
+        <p>Pharmacie Ndèye Coumba · Route principale, à côté du rond-point, Guédiawaye</p>
+        <p>Téléphone : 77 000 00 00 · E-mail : pharmacie.ndeyecoumba@exemple.sn</p>
+        <p>Ouvert du lundi au samedi, de 8 h à 22 h</p>
+        <p><a href="gestion/connexion.html">Espace de gestion</a></p>
+        <p><small>Projet pédagogique · structure fictive</small></p>
+    </div>
+</body>
+</html>

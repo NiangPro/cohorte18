@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un produit · PharmaGestion</title>
+</head>
+<body>
+    <!-- Menu de l'espace de gestion -->
+    <div>
+        <p><strong>PharmaGestion</strong> · Dr Ndèye Coumba Faye, pharmacienne</p>
+        <ul>
+            <li><a href="produits.html">Produits</a></li>
+            <li><a href="produit-form.html">Ajouter un produit</a></li>
+            <li><a href="vente.html">Vente au comptoir</a></li>
+            <li><a href="../index.html">Déconnexion</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <h1>Ajouter un produit</h1>
+    <form action="produits.html">
+        <fieldset>
+            <legend>Le produit</legend>
+            <label for="reference">Référence</label><br>
+            <input type="text" id="reference" name="reference" placeholder="P061" minlength="4" maxlength="4" required><br>
+            <label for="nom">Nom du produit</label><br>
+            <input type="text" id="nom" name="nom" maxlength="100" required><br>
+            <label for="categorie">Catégorie</label><br>
+            <select id="categorie" name="categorie" required>
+                <option value="">Choisissez une catégorie</option>
+                <option>Douleur et fièvre</option>
+                <option>Rhume et allergies</option>
+                <option>Digestion</option>
+                <option>Vitamines et compléments</option>
+                <option>Soins du visage et du corps</option>
+                <option>Hygiène</option>
+                <option>Bébé et maman</option>
+                <option>Premiers secours et prévention</option>
+            </select><br>
+            <p>Type</p>
+            <input type="radio" id="type-med" name="type" value="medicament" checked>
+            <label for="type-med">Médicament</label>
+            <input type="radio" id="type-para" name="type" value="parapharmacie">
+            <label for="type-para">Parapharmacie</label><br>
+            <label for="description">Description</label><br>
+            <textarea id="description" name="description" rows="4" cols="50"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Prix et stock</legend>
+            <label for="prix_achat">Prix d'achat (FCFA)</label><br>
+            <input type="number" id="prix_achat" name="prix_achat" min="0" step="50" required><br>
+            <label for="prix_vente">Prix de vente (FCFA)</label><br>
+            <input type="number" id="prix_vente" name="prix_vente" min="0" step="50" required><br>
+            <label for="stock">Stock</label><br>
+            <input type="number" id="stock" name="stock" min="0" value="0" required><br>
+            <label for="seuil">Seuil d'alerte</label><br>
+            <input type="number" id="seuil" name="seuil" min="0" value="10" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dates et fournisseur</legend>
+            <label for="date_fabrication">Date de fabrication</label><br>
+            <input type="date" id="date_fabrication" name="date_fabrication" required><br>
+            <label for="date_peremption">Date de péremption</label><br>
+            <input type="date" id="date_peremption" name="date_peremption" required><br>
+            <label for="fournisseur">Fournisseur</label><br>
+            <select id="fournisseur" name="fournisseur" required>
+                <option value="">Choisissez un fournisseur</option>
+                <option>Cofimed Afrique</option>
+                <option>Téranga Santé Distribution</option>
+                <option>ParaSahel</option>
+            </select><br>
+            <label for="image">Image du produit</label><br>
+            <input type="file" id="image" name="image" accept="image/*"><br>
+            <input type="checkbox" id="visible" name="visible" checked>
+            <label for="visible">Afficher dans le catalogue du site</label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enregistrer">
+        <input type="reset" value="Effacer">
+    </form>
+
+    <hr>
+    <p><small>PharmaGestion · espace réservé à l'équipe · projet pédagogique, données fictives</small></p>
+</body>
+</html>
